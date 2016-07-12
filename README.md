@@ -1,1 +1,1 @@
-# Wrong_adjacencies dot sub-graph for MGRA Results
+# Wrong adjacencies dot sub-graph for MGRA Results
