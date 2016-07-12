@@ -1,1 +1,1 @@
-# Wrong_adjacencies for MGRA Result
+# Wrong_adjacencies for MGRA Results
