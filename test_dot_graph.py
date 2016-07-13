@@ -17,7 +17,7 @@ for v1 in list1:
 text="6_200_100_0/1"
 sim_dir = "/Users/crandalllab/Ankit/mgra-gos-asm2copy/only_reareg_5chr/" + text           # Location of simulated ancestral genome files
 mgra_result = "/Users/crandalllab/Ankit/mgra-gos-asm2copy/only_reareg_5chr/" + text       # Location of constructed ancestral genome file
-res = "/Users/crandalllab/Ankit/wrongadjacencies/"                                        # Output file location
+res = "/Users/crandalllab/Ankit/wrongadjacencies"                                        # Output file location
 
 test_dot_graph(sim_dir,mgra_result,res)
 
