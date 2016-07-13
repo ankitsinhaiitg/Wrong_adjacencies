@@ -9,7 +9,7 @@ def test_dot_graph(simulated_dir,MGRA_result_dir,result_dir):
 
     simulated = simulated_dir + "/simul"
     result = MGRA_result_dir + "/MGRA/genomes"
-    res11 = result_dir + "wrong_adjacencies.txt"
+    res11 = result_dir + "/wrong_adjacencies.txt"
     onlyfiles = [f for f in listdir(result) if isfile(join(result, f))]
     resultfile = []
     for file in onlyfiles:
