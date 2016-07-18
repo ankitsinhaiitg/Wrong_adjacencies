@@ -21,7 +21,7 @@ for v1 in list1:
                         os.mkdir(res)
                     if not os.path.exists(new_res):
                         os.mkdir(new_res)
-                    test_dot_graph(sim_dir, mgra_result, new_res,block)
+                    run_dot_graph(sim_dir, mgra_result, new_res,block)
 '''
 text="6_200_100_0/1"
 sim_dir = "/Users/crandalllab/Ankit/mgra-gos-asm2copy/only_reareg_5chr/" + text + "/simul"          # Location of simulated ancestral genome files
