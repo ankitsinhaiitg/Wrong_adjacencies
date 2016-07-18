@@ -13,7 +13,7 @@ def run_dot_graph(simulated, result, result_dir, block):
     onlyfiles = [f for f in listdir(result) if isfile(join(result, f))]
     resultfile = []
     for file in onlyfiles:
-        if file[len(file) - 4:] == "gen_":
+        if file[len(file) - 4:] == "gen":
             resultfile.append(file)
     simfile = [f for f in listdir(simulated) if isfile(join(simulated, f))]
     if not simfile:
