@@ -23,13 +23,18 @@ def run_dot_graph(simulated, result, result_dir, block):
         logging.warning("NO RESULT FILES FOUND")
         return
     wrongedgefile = open(res11, "w")
+    flag = 0
     for f in resultfile:
         for j in simfile:
             if f.split(".")[0] == j.split(".")[0]:
+                flag = 1
                 x = get_wrong_adjacencies.get_wrong_adjacencies(simulated + "/" + j, result + "/" + f)
                 if x:
                     wrongedgefile.write("\n".join(x) + "\n")
     wrongedgefile.close()
+    if not flag:
+        logging.warning("NO MATCHING PAIR OF ANCESTRAL AND SIMULATED GENOMES FOUND")
+        return 
     wrong_adjacencies_dot_graph(block, result_dir)
 
 
